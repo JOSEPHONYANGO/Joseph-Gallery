@@ -5,8 +5,8 @@ from django.shortcuts import render
 def gallery (request):
     return render(request,'photos/gallery.html')
 
-def add (request):
+def addPhoto (request, pk):
     return render(request,'photos/add.html')
 
-def photo (request):
+def viewPhoto (request):
     return render(request,'photos/photo.html')        
