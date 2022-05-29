@@ -6,4 +6,4 @@
 
 # Configuration
 
-## License 
+## License
