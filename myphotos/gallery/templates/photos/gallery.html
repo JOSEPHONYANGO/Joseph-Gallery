@@ -53,9 +53,9 @@
                     <div class="col-md-4">
                     <div class="card my-2">
                         <img class="image-thumbail">
-                        <img src="https://i.etsystatic.com/22851110/r/il/930792/2344354738/il_fullxfull.2344354738_fnle.jpg" alt="Jesus" height="400px">
+                        <img src="{{photo.image.url}}" alt="Jesus" height="400px">
                         <div class="card-body">
-                          <small>Category:Religion</small>
+                          <small>Category:{{photo.category.name}}</small>
                         </div>
                         <a href="{% url 'photo'  %}" class="btn btn-outline-dark btn-sm m-1">View</a>
 
