@@ -9,9 +9,9 @@ def gallery (request):
     context = {'categories':categories,'photos':photos}
     return render(request,'photos/gallery.html',context)
 
-def addPhoto (request):
-    photo = Photo.objects.get()
-    return render(request,'photos/add.html',{'photo':photo})
+def viewPhoto (request,pk):
+    photo = Photo.objects.get(id=pk)
+    return render(request,'photos/photo.html',{'photo':photo})
 
-def viewPhoto (request):
-    return render(request,'photos/photo.html')        
+def addPhoto (request):
+    return render(request,'photos/add.html')        
