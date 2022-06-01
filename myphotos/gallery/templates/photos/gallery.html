@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'photos/base.html' %}
+{% load static %}
+{% comment %} <!DOCTYPE html>
+<html lang="en"> {% endcomment %}
+{% comment %} <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +15,10 @@
         height:200px;
     }
 </style> {% endcomment %}
-</head>
+</head> 
+
+{% block content  %}
+
 <body class="m-5">
     <div class="container"> 
         <div class="row">
@@ -80,4 +85,6 @@
     </div>
 	
 </body>
-</html>
+
+{% endblock  %}
+{% comment %} </html> {% endcomment %}
